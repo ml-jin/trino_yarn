@@ -1,0 +1,23 @@
+{
+  "schema": "http://example.org/specification/v2.0.0",
+  "metadata": {
+  },
+  "global": {
+    "site.global.app_user": "yarn",
+    "site.global.user_group": "hadoop",
+    "site.global.data_dir": "/tmp/presto223/data",
+    "site.global.config_dir": "/tmp/presto223/etc",
+    "site.global.app_name": "presto-server-0.223",
+    "site.global.app_pkg_plugin": "${AGENT_WORK_ROOT}/app/definition/package/plugins/",
+    "site.global.singlenode": "false",
+    "site.global.coordinator_host": "10.180.210.93",
+    "site.global.presto_server_port": "30088",
+    "site.global.catalog":"",
+    "application.def": ".slider/package/presto/presto-yarn-package-1.6-SNAPSHOT-0.223.zip"
+  },
+  "components": {
+    "slider-appmaster": {
+      "jvm.heapsize": "128M"
+    }
+  }
+}
