@@ -1,0 +1,28 @@
+{
+  "schema": "http://example.org/specification/v2.0.0",
+  "metadata": {
+  },
+  "global": {
+    "site.global.app_user": "root",
+    "site.global.user_group": "root",
+    "site.global.data_dir": "/tmp/presto223/data",
+    "site.global.config_dir": "/tmp/presto223/etc",
+    "site.global.app_name": "presto-server-0.223",
+    "site.global.app_pkg_plugin": "${AGENT_WORK_ROOT}/app/definition/package/plugins/",
+    "site.global.singlenode": "true",
+    "site.global.coordinator_host": "10.180.210.93",
+    "site.global.presto_server_port": "30088",
+    "site.global.presto_query_max_memory": "5GB",
+    "site.global.presto_query_max_memory_per_node": "600MB",
+    "site.global.presto_query_max_total_memory_per_node":  "600MB",
+    "site.global.catalog":"",
+    "site.global.jvm_args": "['-server', '-Xmx16G', '-XX:+UseG1GC', '-XX:G1HeapRegionSize=32M', '-XX:+UseGCOverheadLimit', '-XX:+ExplicitGCInvokesConcurrent', '-XX:+HeapDumpOnOutOfMemoryError', '-XX:OnOutOfMemoryError=kill -9 %p', '-Djdk.attach.allowAttachSelf=true']",
+    "site.global.log_properties": "['com.facebook.presto=DEBUG']",
+    "application.def": ".slider/package/PRESTO/presto-yarn-package-1.6-SNAPSHOT-0.223.zip"
+  },
+  "components": {
+    "slider-appmaster": {
+      "jvm.heapsize": "128M"
+    }
+  }
+}
