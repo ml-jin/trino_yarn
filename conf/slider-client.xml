@@ -43,6 +43,17 @@
       <name>yarn.resourcemanager.address</name>
       <value>manager93.bigdata:8050</value>
   </property>
+
+  <property>
+      <name>yarn.resourcemanager.principal</name>
+      <value>rm/manager93.bigdata@EXAMPLE.COM</value>
+    </property>
+
+    <property>
+      <name>dfs.namenode.kerberos.principal</name>
+      <value>nn/manager93.bigdata@EXAMPLE.COM</value>
+    </property>
+
   <!--
     <property>
       <name>slider.client.resource.origin</name>
